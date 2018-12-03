@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>demo</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../src/index.js"></script>
+</head>
+<body>
+</body>
+<script id="template" type="text/plain">
+    <ul>
+		<%for(var i=0; i<list.length; i++){%>
+			<li><%-list[i]%></li>
+		<%}%>
+	</ul>
+</script>
+<script type="text/javascript">
+var str = document.getElementById('template').innerHTML;
+var list = [];
+for (var i = 1; i <= 10; i++) {
+    list.push('这是第' + i + '行数据');
+}
+var html = template(str, { list: list });
+document.getElementsByTagName('body')[0].innerHTML = html;
+</script>
+
+</html>
