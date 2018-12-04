@@ -30,7 +30,7 @@
 
 ## 案例
 
-请查看[**`example`**](https://github.com/wanls4583/js-template/tree/master/src/example)
+请查看[**`example`**](https://github.com/wanls4583/js-template/blob/master/example/demo.html)
 
 ## 贡献
 
